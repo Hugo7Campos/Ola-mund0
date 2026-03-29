@@ -1,27 +1,79 @@
-# 💍 Projeto: Contato com a Terra Média
+﻿# 💍 Projeto: Contato com a Terra Média
 
-Este é um projeto de estudo desenvolvido para praticar a estruturação de formulários complexos em **HTML5** e a estilização com **CSS3**, utilizando a temática da trilogia *O Senhor dos Anéis*.
+## 🧙‍♂️ Visão Geral
 
-## 🚀 Sobre o Projeto
+Este projeto é uma página web educativa inspirada na trilogia _O Senhor dos Anéis_ (Terra Média) e foi desenvolvido para treinar:
+- HTML5 semântico e acessível
+- CSS3 para layout e responsividade
+- Formulários complexos, com validação e UX
 
-O objetivo deste formulário é simular um sistema de contato e recrutamento para o "Conselho de Elrond". Ele explora diversos recursos de interface de usuário (UI) para coletar dados de forma organizada e semântica.
+A página principal (carta.html) é um formulário de  contato tematizado como se você estivesse escrevendo ao Conselho de Elrond.
 
-## 🛠️ Tecnologias Utilizadas
+## 🧩 Funcionalidades Implementadas
 
-* **HTML5:** Estruturação semântica (`<main>`, `<header>`, `<nav>`, `<fieldset>`).
-* **CSS3:** Layout flexível e estilização personalizada.
-* **Elementos de Formulário:** * Validação de e-mail e campos obrigatórios (`required`).
-    * Seleção de data (`input type="date"`).
-    * Seleção de cores (`input type="color"`).
-    * Barra de nível de poder (`input type="range"`).
-    * Upload de arquivos/relíquias (`input type="file"`).
-    * Listas inteligentes (`datalist`) e agrupamento de opções (`optgroup`).
+- Navegação entre páginas (menu com links internos)
+- Campo de nome, e-mail e ano de nascimento
+- Escolha de gênero/raça (radio buttons)
+- Seleção do filme favorito e local da Terra Média (select + optgroup)
+- Checkbox de habilidades (Espada, Arco, Magia, Furtividade)
+- Controle de intensidade/poder (input type=range)
+- Origem via datalist
+- Escolha de cor com input type=color
+- Data de jornada e upload de relicário (input type=date, input type=file)
+- Área de texto para mensagem livre
+- Botões de submit/reset
 
-## 📂 Estrutura de Arquivos
+## 📁 Estrutura de Arquivos
 
-```text
-/
-├── index.html           # Página principal do formulário
-├── subarquivo/
-│   └── style.css        # Folha de estilo personalizada
-└── README.md            # Documentação do projeto
+`	ext
+Ola-mund0/
+├── README.md
+├── index.html
+├── contato.html
+├── carta.html
+├── ordemdosfilmes.html
+├── sinopse.html
+├── curiosidades.html
+├── imagem.html
+├── impacto.html
+├── informacoes.html
+├── personagensprincipais.html
+└── subarquivo/
+    └── style.css
+`
+
+## ⚙️ Como Usar
+
+1. Abra o arquivo index.html no navegador (ou carta.html diretamente).
+2. Navegue pelas abas no cabeçalho.
+3. Preencha o formulário e envie (o ction=# não envia para servidor real).
+
+### Com Live Server (VSCode)
+- Instale a extensão Live Server
+- Clique com o botão direito em index.html e selecione **Open with Live Server**
+- Use o URL HTTP gerado no browser
+
+## 🎨 Estilização
+
+O arquivo subarquivo/style.css controla:
+- cores e espaçamentos
+- tipografia
+- layout responsivo
+- visual do menu e botões
+- centralização da tabela em ordemdosfilmes.html
+
+## 🛠️ Melhorias Sugeridas
+
+- Acrescentar JavaScript para validação customizada (p.ex. confirmação de e-mail)
+- Conectar o formulário a um backend real (Node.js, PHP, Django)
+- Adicionar suporte total a celular (media queries)
+- Incluir ícones via fonte (Font Awesome) e animações suaves
+
+## 📌 Notas
+
+- O projeto é estático e não depende de servidor.
+- Todos os arquivos estão sob a licença MIT (ou outra que você escolher).
+
+## 📝 Licença
+
+Distribuído sob licença MIT.
