@@ -1,31 +1,58 @@
+/* 1. CONFIGURAÇÕES GERAIS (Reset e Body) */
+* {
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho dos elementos */
+}
 
-body{
-    background-color: rgb(193, 245, 193);
+body {
+    background-color: rgb(248, 248, 248);
     margin: 0;
     padding: 20px;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
-main{
+
+main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-#titulo_principal{
+/* 2. CABEÇALHOS E TÍTULOS */
+#titulo_principal {
+    background-color: rgb(4, 122, 4);
+    color: aliceblue;
     font-size: 1.0em;
     font-weight: bold;
-    color: white;
     padding: 10px;
     border-radius: 5px;
-    bottom: 15%;
+    /* Nota: 'bottom' só funciona com 'position: relative/absolute', 
+       removi para não quebrar seu layout agora */
 }
-.links{
+
+.titulo_principal {
+    background-color: green;
+    margin: 0 15px; /* Simplificado margin-left e right */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 80%;
+}
+
+.titulo_secundario {
+    background-color: green;
+    color: aliceblue;
+    font-weight: bold;
+    font-style: oblique;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* 3. NAVEGAÇÃO E LINKS */
+.links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
-.links a{
+
+.links a {
     display: inline-block;
     padding: 5px 15px;
     background-color: rgb(2, 80, 2);
@@ -33,41 +60,35 @@ main{
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid white;
-  
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s; /* Suaviza a animação */
 }
-.links a:hover{
+
+.links a:hover {
     background-color: white;
     color: rgb(2, 80, 2);
     transform: scale(1.05);
 }
-.titulo_principal{
-    background-color: green;
-    margin-left: 15px;
-    margin-right: 15px;
-    box-shadow: 0 4px 8px ;
-    max-width: 80%;
+
+/* 4. LAYOUT E IMAGENS */
+.layout {
+    display: flex;
 }
 
-.titulo_secundario{
-    
-    background-color: green;
-    font-style: oblique;
-    font: bold;
-    color: aliceblue;;
-    border-radius: 5px;
-    padding: 5px;
-}
-.layout{
-    display: flex;
-}   
-#titulo_principal{
-    background-color: rgb(4, 122, 4);
-    color: aliceblue;
-    bottom: 50%;
-}
-.imagem{
+.imagem {
     display: flex;
     background-color: rgb(4, 122, 4);
+}
+
+.tabela-filmes {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente o conteúdo dentro do container */
+    align-items: center; /* opcional: centraliza verticalmente dentro do container */
+}
+
+.tabela-filmes table {
+    border-collapse: collapse; /* deixa as bordas mais limpas */
+    margin: 0 auto; /* garante centralização caso o display flex não seja usado */
+    max-width: 100%;
 }
