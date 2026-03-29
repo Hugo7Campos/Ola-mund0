@@ -92,3 +92,72 @@ main {
     margin: 0 auto; /* garante centralização caso o display flex não seja usado */
     max-width: 100%;
 }
+/* Estilo para o grupo de campos (as caixinhas) */
+.form-contato fieldset {
+    border: 2px solid #4B5320; /* Verde Musgo */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(253, 245, 230, 0.5); /* Papel antigo levemente transparente */
+}
+
+/* Estilo para o título de cada grupo */
+.form-contato legend {
+    font-weight: bold;
+    color: #4B5320;
+    padding: 0 10px;
+    font-variant: small-caps;
+}
+
+/* --- O SEGREDO: Personalizando todos os inputs de uma vez --- */
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato input[type="number"],
+.form-contato input[type="date"],
+.form-contato select,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não "estoure" a largura */
+    font-family: 'Georgia', serif;
+    background-color: #fff;
+    transition: 0.3s; /* Suaviza o efeito de clique */
+}
+
+/* Efeito de destaque ao clicar em qualquer campo */
+.form-contato input:focus, 
+.form-contato select:focus, 
+.form-contato textarea:focus {
+    border-color: #D4AF37; /* Dourado */
+    outline: none;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Estilizando os botões */
+.acoes-formulario button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #4B5320;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #2E3314;
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+button[type="reset"] {
+    background-color: #8B0000; /* Vermelho escuro */
+    color: white;
+    margin-left: 10px;
+}
