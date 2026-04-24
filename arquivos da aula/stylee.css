@@ -1,0 +1,72 @@
+#titulo_principal {
+    background-color: green; /* Define a cor de fundo do elemento como verde */
+    color: white; /* Define a cor do texto do elemento como branco */
+    border-radius: 10px  ;
+    font-size: large;
+    display: block;
+}
+
+.rodape {
+    text-align: center; /* Centraliza horizontalmente o texto dentro da classe rodape */
+}
+
+body {
+    background-color: rgba(40, 245, 13, 0.459); /* Define a cor de fundo da página inteira como branco */
+    color: rgb(0, 0, 0); /* Define a cor padrão do texto da página como preto */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto e suas alternativas de segurança */
+    font-size: 16px; /* Define o tamanho padrão da fonte na página inteira */
+}
+
+#layout {
+    line-height: 20px; /* Define a altura do espaço entre as linhas de texto */
+    display: flex; /* Cria um contêiner flexível para alinhar os itens dentro dele */
+    text-decoration: none; /* Remove efeitos do texto, como sublinhados */
+    
+    /* --- AQUI ESTÁ A CORREÇÃO DA LETRA --- */
+    word-spacing: normal; /* Voltei para 'normal' para tirar o espaço gigante de 50px entre as palavras */
+    letter-spacing: 1px; /* Coloquei um valor negativo (-1px) para deixar as letras bem juntinhas */
+    
+    text-indent: 5px; /* Cria um recuo (parágrafo) na primeira linha do texto */
+    text-align: justify; /* Alinha o texto encostando nas margens esquerda e direita */
+    
+    /* --- INÍCIO DAS REGRAS DE BORDA --- */
+    border-style: dashed; /* Deixa a borda com visual tracejado */
+    border-width: 5px; /* Define a espessura da borda como 5 pixels */
+    border-color: rgb(61, 122, 61); /* Pinta a borda de verde */
+
+    border: dashed 5px rgb(255, 0, 0); /* Atalho: aplica estilo tracejado, espessura e cor de uma vez */
+
+    /* Estas linhas vão substituir todas as configurações de borda feitas acima! */
+    border-top: solid 10px rgb(0, 0, 0); /* Aplica uma borda sólida e preta no TOPO */
+    border-left: solid 10px rgb(0, 0, 0); /* Aplica uma borda sólida e preta na ESQUERDA */
+    border-bottom: solid 10px rgb(0, 0, 0); /* Aplica uma borda sólida e preta EMBAIXO */
+    border-right: solid 10px rgb(0, 0, 0); /* Aplica uma borda sólida e preta na DIREITA */
+    
+    border-radius: 50px; /* Arredonda as pontas/cantos do elemento */
+
+    /* --- INÍCIO DAS REGRAS DE MARGEM (ESPAÇO EXTERNO) --- */
+    margin: 20px; /* Atalho: Aplica 20px de espaço externo em TODOS os 4 lados de uma vez */
+    
+    /* As 3 linhas abaixo são redundantes, pois o 'margin: 20px' acima já fez esse trabalho */
+    margin-left: 20px; /* Garante 20px de margem na ESQUERDA */
+    margin-right: 20px; /* Garante 20px de margem na DIREITA */
+    margin-bottom: 20px; /* Garante 20px de margem EMBAIXO */
+    
+    /* Esta linha sobrescreve a margem do topo que era 20px e passa a ser automática */
+    margin-top: auto; 
+
+    padding: 20px 60px 100px 200px; /* Atalho de padding para os 4 lados */
+    padding-left: 20px; /* Sobrescreve padding da ESQUERDA para 20px */
+    padding-right: 20px; /* Sobrescreve padding da DIREITA para 20px */
+    padding-top: 20px; /* Sobrescreve padding do TOPO para 20px */
+    padding-bottom: 20px; /* Sobrescreve padding de BAIXO para 20px */
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado padrão que os links possuem */
+}
+
+.teste_display{
+    background-color: orange; /* Define a cor de fundo laranja */
+    display: inline-block;  
+}   
