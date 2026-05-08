@@ -1,0 +1,297 @@
+/* IMPORTANDO FONTES DO GOOGLE */
+/* Cinzel é para títulos (estilo Senhor dos Anéis) e Lora é para textos normais */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+/* CONFIGURAÇÕES GERAIS - APLICADO EM TUDO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total dos elementos */
+}
+
+/* ESTILO DO CORPO DA PÁGINA (BODY) */
+body {
+    background-color: #1a1a1a; /* Fundo cinza bem escuro */
+    color: #e0e0e0;            /* Texto cinza claro para não cansar a vista */
+    font-family: 'Lora', serif; /* Fonte padrão para os textos */
+    line-height: 1.6;          /* Espaço entre as linhas para facilitar a leitura */
+    padding: 10px;                /* Removido o padding para encostar na borda da tela */
+}
+
+/* CONTAINER PRINCIPAL (MAIN) */
+/* Aqui é onde fica o conteúdo principal do site */
+main {
+    max-width: 100%;           /* Agora ocupa toda a largura da tela */
+    margin: 30px;                 /* Removido a margem para encostar nas bordas */
+    background-color: #262626; /* Fundo um pouco mais claro que o body */
+    padding: 20px;             /* Espaço interno reduzido */
+    border: 1px solid #d4af37;              /* Removido a borda para um visual mais limpo e largo */
+    box-shadow: none;          /* Removido a sombra para focar na largura total */
+}
+
+/* CABEÇALHO PRINCIPAL DO SITE */
+#titulo_principal {
+    background-color: #0d0d0d; /* Fundo preto */
+    text-align: center;        /* Centraliza o texto */
+    padding: 60px 20px;        /* Espaço interno grande no topo e embaixo */
+    border-bottom: 4px double #d4af37; /* Borda dupla dourada embaixo */
+}
+
+/* TÍTULO H1 (O Senhor dos Anéis) */
+#titulo_principal h1 {
+    font-family: 'Cinzel', serif; /* Fonte temática */
+    color: #d4af37;               /* Cor dourada */
+    font-size: 3.5rem;            /* Tamanho grande */
+    margin-bottom: 10px;          /* Espaço abaixo do título */
+    text-transform: uppercase;    /* Tudo em maiúsculo */
+}
+
+/* SUBTÍTULO H2 DO CABEÇALHO */
+#titulo_principal h2 {
+    font-family: 'Cinzel', serif;
+    color: #aaaaaa;               /* Cor cinza média */
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* MENU DE NAVEGAÇÃO (LINKS) */
+.links {
+    display: flex;             /* Deixa os links um ao lado do outro */
+    flex-wrap: wrap;           /* Se não couber, pula para a linha de baixo */
+    justify-content: center;   /* Centraliza os botões */
+    gap: 15px;                 /* Espaço entre os botões */
+    margin-top: 30px;          /* Espaço acima do menu */
+}
+
+/* ESTILO DOS BOTÕES DO MENU */
+.links a {
+    text-decoration: none;     /* Remove o sublinhado padrão do link */
+    color: #d4af37;            /* Texto dourado */
+    padding: 10px 20px;        /* Espaço interno do botão */
+    border: 1px solid #d4af37; /* Borda dourada */
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    transition: 0.3s;          /* Deixa a animação de passar o mouse suave */
+}
+
+/* EFEITO AO PASSAR O MOUSE NOS LINKS */
+.links a:hover {
+    background-color: #d4af37; /* Fundo fica dourado */
+    color: #1a1a1a;            /* Texto fica escuro */
+}
+
+/* TÍTULOS DENTRO DO CONTEÚDO (H2 SECUNDÁRIO) */
+.titulo_secundario {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 25px;       /* Espaço abaixo do título */
+    padding-bottom: 10px;      /* Espaço entre texto e borda debaixo */
+    border-bottom: 1px solid #444; /* Linha fina cinza embaixo */
+}
+
+/* CONFIGURAÇÃO DE PARÁGRAFOS */
+p {
+    margin-bottom: 10px;       /* Espaço entre um parágrafo e outro */
+    text-align: justify;       /* Alinha o texto nos dois lados */
+}
+
+/* LISTAS (UL e OL) */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 40px;        /* Espaço para os itens não ficarem colados na esquerda */
+}
+
+li {
+    margin-bottom: 10px;       /* Espaço entre os itens da lista */
+}
+
+/* LAYOUT DE DUAS COLUNAS (USADO NA HOME) */
+.layout {
+    display: flex;             /* Usa flexbox para as colunas */
+    flex-wrap: wrap;           /* Se a tela for pequena (celular), coloca um embaixo do outro */
+    gap: 20px;                 /* Espaço entre as colunas */
+}
+
+/* LADO ESQUERDO DO LAYOUT (TEXTO) */
+article {
+    flex: 3;                   /* Proporção para o texto */
+    min-width: 300px;
+}
+
+/* LADO DIREITO DO LAYOUT (IMAGEM/ASIDE) */
+aside {
+    flex: 2;                   /* Proporção para a imagem */
+    min-width: 300px;
+}
+
+/* ESTILO DAS IMAGENS E FIGURAS */
+figure {
+    background-color: #000;    /* Fundo preto para a moldura */
+    padding: 15px;             /* Espaço entre a imagem e a moldura */
+    border: 1px solid #d4af37; /* Borda dourada na moldura */
+    text-align: center;
+}
+
+img {
+    max-width: 100%;           /* Garante que a imagem não ultrapasse a tela */
+    height: auto;              /* Mantém a proporção da imagem */
+    display: block;            /* Remove espaços vazios abaixo da imagem */
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 10px;          /* Espaço acima da legenda */
+    color: #d4af37;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* TABELAS */
+.tabela-filmes {
+    overflow-x: auto;          /* Se a tabela for grande, cria barra de rolagem lateral */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;               /* Tabela ocupa toda a largura disponível */
+    border-collapse: collapse; /* Une as bordas das células */
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;             /* Espaço interno das células */
+    border: 1px solid #444;    /* Borda cinza em cada célula */
+    text-align: center;
+}
+
+th {
+    background-color: #d4af37; /* Cabeçalho dourado */
+    color: #1a1a1a;            /* Texto do cabeçalho escuro */
+    font-family: 'Cinzel', serif;
+}
+
+/* ESTILOS PARA FORMULÁRIOS (PÁGINA DE CONTATO) */
+.form-contato fieldset {
+    border: 1px solid #d4af37;
+    padding: 15px;             /* Reduzi o espaço interno do grupo */
+    margin-bottom: 15px;       /* Reduzi o espaço entre os grupos */
+    border-radius: 5px;
+}
+
+.form-contato legend {
+    padding: 0 10px;           /* Espaço lateral no título do fieldset */
+    color: #d4af37;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.form-contato label {
+    display: block;            /* Faz o label ocupar a linha toda */
+    margin-bottom: 5px;        /* Reduzi o espaço abaixo do nome do campo */
+    font-weight: bold;
+}
+
+/* CAMPOS DE ENTRADA DO FORMULÁRIO */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;               /* Ocupa a largura total */
+    padding: 8px;              /* Espaço interno de digitação */
+    margin-bottom: 8px;        /* Espaço pequeno entre os campos */
+    background-color: #333;    /* Fundo escuro */
+    border: 1px solid #555;    /* Borda cinza escuro */
+    color: #fff;               /* Texto branco ao digitar */
+    border-radius: 4px;
+    font-family: 'Lora', serif; /* Mesma fonte do site */
+    font-size: 0.95rem;
+}
+
+/* INPUT RANGE (CONTROLE DESLIZANTE) */
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 8px;
+    accent-color: #d4af37;     /* Cor dourada no controle deslizante */
+}
+
+/* INPUT COLOR (COR DO MANTO) */
+input[type="color"] {
+    width: 60px;               /* Só precisa ser pequeno */
+    height: 36px;
+    padding: 2px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+/* GRUPO DE RADIO/CHECKBOX EM LINHA */
+.grupo-radio {
+    display: flex;             /* Coloca os itens lado a lado */
+    flex-wrap: wrap;           /* Quebra linha se não couber */
+    gap: 15px;                 /* Espaço entre os itens */
+    margin-bottom: 8px;
+}
+
+/* Garante que labels dentro do grupo não sejam block */
+.grupo-radio label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;       /* Peso normal para não destacar demais */
+    cursor: pointer;
+    width: auto;               /* Não ocupa a linha toda */
+}
+
+/* BOTÕES DO FORMULÁRIO */
+.acoes-formulario {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 15px 30px;
+    cursor: pointer;           /* Muda o cursor para a mãozinha */
+    border: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Botão Enviar */
+button[type="submit"] {
+    background-color: #d4af37;
+    color: #1a1a1a;
+}
+
+/* Botão Limpar */
+button[type="reset"] {
+    background-color: transparent;
+    border: 1px solid #8b0000;
+    color: #8b0000;
+}
+
+/* SEÇÃO DE IMPACTO (PÁGINA IMPACTO.HTML) */
+#impacto {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/images/senhordosaneis_fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#impacto main {
+    background-color: rgba(0,0,0,0.85); /* Fundo um pouco mais escuro e transparente */
+}
+
+/* UTILITÁRIOS */
+.centralizar {
+    text-align: center;
+}
+
+/* Espaçamento extra para evitar que textos fiquem colados */
+.espaco-topo {
+    margin-top: 30px;
+}
